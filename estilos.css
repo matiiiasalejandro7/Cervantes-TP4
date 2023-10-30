@@ -17,13 +17,25 @@ body {
 
 .titulobienvenida {
 	display: flex;
-	flex-direction: column;
-	padding: 10rem;
+	flex-direction: row;
+	max-width: 1920px;
+	width: 100%;
 }
 .titulobienvenida h2 {
 	font-family: 'Oswald', sans-serif;
+	color: #151515;
 	font-size: 100pt;
 	font-weight: 700;
 	max-width: 1200px;
 	line-height: 9rem;
+	padding-left: 10rem;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+.titulobienvenida h2:hover {
+	color: #ff2e2a;
+}
+.corazonbienvenida {
+	margin: 0px;
+	padding-right: 9rem;
 }
