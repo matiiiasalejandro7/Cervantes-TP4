@@ -6,12 +6,37 @@
 	cursor: url("img/cursor.png"), auto;
 }
 body {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+body {
 	display: flex;
 	flex-direction: column;
 	background-color: #f3ecdc;
 	max-width: 1920px;
 	width: 100%;
 	margin: 0px;
+}
+main {
+	display: flex;
+	flex-direction: column;
+}
+p {
+	color: #151515;
+}
+ul li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
 }
 /* bienvenida */
 
@@ -38,4 +63,84 @@ body {
 .corazonbienvenida {
 	margin: 0px;
 	padding-right: 9rem;
+}
+/* footer */
+
+footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: baseline;
+	margin-top: 3rem;
+}
+.logosinstitucionesfooter {
+	vertical-align: baseline;
+}
+/* botonera */
+
+.botonera {
+	list-style: none;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: space-around;
+	justify-content: flex-end;
+	padding-right: 3rem;
+}
+.botonera a {
+	color: #151515;
+}
+.botonera a:hover {
+	color: #ff2e2a;
+}
+nav ul {
+	list-style: none;
+}
+.botonera ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: space-around;
+	height: 50px;
+	gap: 70px;
+	font-size: 12pt;
+	margin-top: 10px;
+}
+/* informacion */
+
+.intro {
+	display: flex;
+	flex-direction: row;
+	max-width: 1920px;
+	width: 100%;
+}
+.division1 {
+	background-color: #ff2e2a;
+}
+.division1 h3 {
+	font-family: 'Oswald', sans-serif;
+	color: #151515;
+	font-size: 35pt;
+	font-weight: 700;
+	max-width: 900px;
+	line-height: 3.5rem;
+	padding-left: 4rem;
+	padding-top: 2rem;
+	padding-bottom: 0.5rem;
+}
+.division1 p {
+	max-width: 900px;
+	font-size: 15pt;
+	line-height: 2rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+.calavera1 {
+	padding-right: 1.36rem;
+}
+.division2 {
+	background-color: #151515;
+	padding-left: 4rem;
+	padding-bottom: 4rem;
 }
