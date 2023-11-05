@@ -190,12 +190,6 @@ nav ul {
   animation: scroll var(--duration) linear infinite;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .marquee__group {
-    animation-play-state: paused;
-  }
-}
-
 .m-item {
   display:flex;
   align-items:center;
