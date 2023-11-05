@@ -130,12 +130,14 @@ nav ul {
 	padding-top: 2rem;
 	padding-bottom: 0.5rem;
 }
+
 .division1 p {
 	max-width: 900px;
 	font-size: 15pt;
 	line-height: 2rem;
 	padding-left: 4rem;
 	padding-right: 4rem;
+	column-count: 2;
 }
 .flecha2 {
 	padding-left: 16rem;
@@ -169,4 +171,45 @@ nav ul {
 	line-height: 2rem;
 	padding-left: 10rem;
 	padding-right: 15rem;
+}
+/* cartelera */
+
+.marquee {
+	display: flex;
+	overflow: hidden;
+	user-select: none;
+	transform: skewY(-1.8deg);
+}
+
+.marquee__group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+.m-item {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+
+.m-item p {
+	display: flex;
+	font-family: 'Oswald', sans-serif;
+	color: #151515;
+	font-size: 70pt;
+	font-weight: bold;
+}
+.m-item p:hover {
+	color: #ff2e2a;
 }
