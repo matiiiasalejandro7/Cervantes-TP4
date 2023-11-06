@@ -63,6 +63,8 @@ a {
 .corazonbienvenida {
 	margin: 0px;
 	padding-right: 9rem;
+	object-fit: contain;
+	width: 100%;
 }
 /* footer */
 
@@ -75,6 +77,8 @@ footer {
 }
 .logosinstitucionesfooter {
 	vertical-align: baseline;
+	object-fit: contain;
+	width: 100%;
 }
 /* botonera */
 
@@ -367,4 +371,36 @@ button:hover {
 	justify-content: center;
 	margin-top: 75px;
 	
+}
+
+/* media */ 
+
+@media screen and (max-width: 600px) {
+body {
+	flex-wrap: wrap;
+}
+.botonera ul {
+	font-size: 8pt;
+	margin-top: 20px;
+	gap: 20px;
+}
+.titulobienvenida {
+	flex-wrap: wrap;
+}
+.titulobienvenida h2 {
+	font-size: 50pt;
+	line-height: 5rem;
+	padding-bottom: 0;
+	padding-top: 0;
+	padding-left: 2rem;
+}
+
+footer {
+	justify-content: normal;
+	align-items: normal;
+}
+footer p {
+	font-size: 7pt;
+	margin-left: 3rem;
+}
 }
