@@ -362,3 +362,9 @@ button:hover {
 	padding-left: 2rem;
 	padding-top: 0;
 }
+.anuncio {
+	display: flex;
+	justify-content: center;
+	margin-top: 75px;
+	
+}
