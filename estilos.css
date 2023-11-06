@@ -77,8 +77,6 @@ footer {
 }
 .logosinstitucionesfooter {
 	vertical-align: baseline;
-	object-fit: contain;
-	width: 100%;
 }
 /* botonera */
 
@@ -177,7 +175,26 @@ nav ul {
 	padding-right: 15rem;
 }
 /* cartelera */
-
+.tituloprogramacion {
+	flex-direction: row;
+	max-width: 1920px;
+	width: 100%;
+	display: none;
+}
+.tituloprogramacion h2 {
+	font-family: 'Oswald', sans-serif;
+	color: #151515;
+	font-size: 100pt;
+	font-weight: 700;
+	max-width: 1200px;
+	line-height: 9rem;
+	padding-left: 10rem;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+.tituloprogramacion h2:hover {
+	color: #ff2e2a;
+}
 .marquee {
 	display: flex;
 	overflow: hidden;
@@ -376,7 +393,7 @@ button:hover {
 /* media */ 
 
 @media screen and (max-width: 600px) {
-body {
+body, .intro, .intro2 {
 	flex-wrap: wrap;
 }
 .botonera ul {
@@ -384,12 +401,15 @@ body {
 	margin-top: 20px;
 	gap: 20px;
 }
-.titulobienvenida {
+.tituloprogramacion {
+	display: block;
+}
+.titulobienvenida, .tituloprogramacion {
 	flex-wrap: wrap;
 }
-.titulobienvenida h2 {
-	font-size: 50pt;
-	line-height: 5rem;
+.titulobienvenida h2, .tituloprogramacion h2 {
+	font-size: 30pt;
+	line-height: 3rem;
 	padding-bottom: 0;
 	padding-top: 0;
 	padding-left: 2rem;
@@ -400,7 +420,70 @@ footer {
 	align-items: normal;
 }
 footer p {
-	font-size: 7pt;
-	margin-left: 3rem;
+	font-size: 5pt;
+	margin-left: 1rem;
+}
+img {
+	object-fit: contain;
+	width: 100%;
+}
+.flecha2 {
+	display: none;
+}
+.division1 {
+	padding-top: 0;
+}
+.division1 h3 {
+	font-size: 25pt;
+	max-width: 900px;
+	line-height: 3rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+.division1 p {
+    max-width: 900px;
+    font-size: 10pt;
+    line-height: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+	padding-bottom: 1rem;
+    column-count: 1;
+}
+.division2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	padding-right: 2rem;
+}
+.division3 p, .division4 p {
+    font-size: 8pt;
+    line-height: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.marquee {
+	display: none;
+}
+.marquee__group {
+	flex-wrap: wrap;
+	padding-bottom: 0;
+}
+section.obras {
+	padding-top: 1rem;
+}
+.card-gallery {
+	gap: 1rem;
+}
+.m-item p {
+	font-size: 8pt;
+}
+.anuncio {
+	display: none;
+}
+.contacto {
+	flex-wrap: wrap;
+}
+.texto {
+	flex-wrap: wrap;
 }
 }
